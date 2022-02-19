@@ -1,5 +1,5 @@
 .change {
-  color: teal;
-  border: 10px solid black;
+  border: 10px solid teal;
+  font-family: "Courier New", Courier, monospace;
   font-size: 100px;
 }
