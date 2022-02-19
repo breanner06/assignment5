@@ -21,9 +21,28 @@ while (i<=10) {
 }
 document.getElementById("square2").innerHTML = text2;
 
-const text3 = document.querySelector(".title");
-const changeColor= document.querySelector(".changeColor");
+function toggleTheme() {
+    var theme = document.getElementsByTagName('link')[0];
+if (theme.getAttribute('href') == 'light.css') {
+    theme.setAttribute('href', 'dark.css');
+} else {
+    theme.setAttribute('href', 'light.css');
+}
+}
 
-changeColor.addEventListener('click', function (){
-    text3.classList.toggle ("change");
-})
+/*var sheets = document.getElementsByTagName('link');
+sheets[0].href = value;}
+const h1 = document.querySelector(".title");
+const h2 = document.querySelector(".title2");
+const loopFields = document.getElementsByClassName(".loopFields");
+const changeColor= document.querySelector(".changeStyle");
+
+changeColor.addEventListener('click', function(){
+    h1.classList.toggle ("changeH1"),
+    h2.classlist.toggle ("changeH2"),
+    loopFields.classlist.toggle ("changeLoopFields");
+});
+*/
+window.addEventListener("resize", function(){
+    document.getElementById("resizing").innerHTML = Math.random();
+  });

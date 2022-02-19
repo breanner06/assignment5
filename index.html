@@ -4,28 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet"/>
+    <link id="theme" rel="stylesheet" type="text/css" href="none.css" />
     <script src="assignment5.js" defer></script>
     <title>Assignment 5</title>
 
 </head>
 <body>
     <h1 class="title">Loops and DOM: Assignment 5</h1>
-    <h2 class="title">For Loop</h2>
+    <h2 class="title2">For Loop</h2>
     <p>A For Loop is used when you want to run the same code multiple times.
     <br>Computer, tell me the squares of 1 through 10:
     </p>
-    <p id="square"></p>
-    <h2 class="title">While Loop</h2>
+    <p class= "loopFields" id="square"></p>
+    <h2 class="title2">While Loop</h2>
     <p>A while loop is used when you want to run code as long as a particular
         condition is true.
     <br>Computer, tell me the squares of 1-10 again: </p>
-    <p id= "square2"></p>
+    <p class= "loopFields" id= "square2"></p>
     
-    <p>This page doesn't look so pretty. Computer change the styles!
+    <p>This page doesn't look so pretty. Computer, change the styles!
     <br>
-    <button class="changeColor">Click to change styles</button>
+    Switch between two styles using the button below.<br />
+    <button onclick="toggleTheme()">Switch</button>
+
     </p>
+    <p>You can also use javascript to run a function as the browser window 
+        size changes (resize window to see).
+        <br>
+        <div id="resizing"> </div>
+    </p>
+
     
 </body>
 </html>
